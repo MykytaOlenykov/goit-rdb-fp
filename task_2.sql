@@ -2,7 +2,6 @@
 DROP TABLE IF EXISTS diseases_cases;
 DROP TABLE IF EXISTS countries;
 DROP TABLE IF EXISTS diseases;
-DROP PROCEDURE IF EXISTS `fill_diseases_tables`;
 
 
 -- CREATE TABLES
@@ -73,5 +72,6 @@ CALL fill_diseases_tables('Malaria', 'Number_malaria');
 CALL fill_diseases_tables('Hiv', 'Number_hiv');
 CALL fill_diseases_tables('Tuberculosis', 'Number_tuberculosis');
 CALL fill_diseases_tables('Smallpox', 'Number_smallpox');
-CALL fill_diseases_tables('Cholera cases', 'Number_cholera_cases');
+CALL fill_diseases_tables('Cholera', 'Number_cholera_cases');
 
+DROP PROCEDURE IF EXISTS `fill_diseases_tables`;
